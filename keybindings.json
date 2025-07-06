@@ -20,17 +20,17 @@
   {
     "key": "ctrl+n",
     "command": "explorer.newFile",
-    "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+    "when": "explorerViewletFocus"
   },
   {
     "key": "ctrl+a",
     "command": "git.stageAll",
-    "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    "when": "!editorFocus"
   },
   {
     "key": "ctrl+shift+a",
     "command": "git.unstageAll",
-    "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    "when": "!editorFocus"
   },
   {
     "key": "cmd+i",
@@ -279,5 +279,18 @@
     "key": "cmd+i",
     "command": "-inlineChat.start",
     "when": "editorFocus && inlineChatHasEditsAgent && inlineChatPossible && !editorReadonly && !editorSimpleInput || editorFocus && inlineChatHasProvider && inlineChatPossible && !editorReadonly && !editorSimpleInput"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "git.cleanAll",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "composer.startComposerPrompt"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-composer.startComposerPrompt"
   }
 ]

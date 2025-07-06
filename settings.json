@@ -58,7 +58,7 @@
   "editor.formatOnSave": true,
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.showToolbar": "always",
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "strings": "on"
